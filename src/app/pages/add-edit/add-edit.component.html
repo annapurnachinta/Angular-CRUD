@@ -14,33 +14,33 @@
             <label class="label-input100" for="first-name">Your Name </label>
             <div class="wrap-input100 rs1 validate-input">
                 <input id="first-name" class="input100" type="text" 
-                name="firstName" placeholder="First name" [(ngModel)]="user.firstName">
+                name="firstName" placeholder="First name" [ngModel]="user.firstName">
                 <span class="focus-input100"></span>
             </div>
             <div class="wrap-input100 rs1 validate-input">
                 <input class="input100" type="text" name="lastName" 
-                placeholder="Last name" [(ngModel)]="user.lastName">
+                placeholder="Last name" [ngModel]="user.lastName">
                 <span class="focus-input100"></span>
             </div>
 
             <label class="label-input100" for="email">Email Address </label>
             <div class="wrap-input100 validate-input">
                 <input id="email" class="input100" type="text" name="emailId" 
-                placeholder="Eg. example@email.com" [(ngModel)]="user.emailId">
+                placeholder="Eg. example@email.com" [ngModel]="user.emailId">
                 <span class="focus-input100"></span>
             </div>
 
             <label class="label-input100" for="phone">Phone Number</label>
             <div class="wrap-input100">
                 <input id="phone" class="input100" type="text" name="phoneNo" 
-                placeholder="Eg. +1 800 000000" [(ngModel)]="user.phoneNo">
+                placeholder="Eg. +1 800 000000" [ngModel]="user.phoneNo">
                 <span class="focus-input100"></span>
             </div>
 
             <label class="label-input100" for="message">Role </label>
             <div class="wrap-input100 validate-input">
                 <div class="rs-select2 js-select-simple select--no-search">
-                    <select name="role" class="custom-select" [(ngModel)]="user.role">
+                    <select name="role" class="custom-select" [ngModel]="user.role">
                         <option selected="selected" value="">Choose option</option>
                         <option value="development">Developer</option>
                         <option value="tester">Tester</option>
@@ -55,15 +55,15 @@
                 <div class="p-t-15">
                     <label class="radio-container m-r-55">Male
                         <input type="radio" value="male" name="gender" 
-                        checked="checked" [(ngModel)]="user.gender">
+                        checked="checked" [ngModel]="user.gender">
                         <span class="checkmark"></span>
                     </label>
                     <label class="radio-container m-r-55">Female
-                        <input type="radio" name="gender" value="female" [(ngModel)]="user.gender">
+                        <input type="radio" name="gender" value="female" [ngModel]="user.gender">
                         <span class="checkmark"></span>
                     </label>
                     <label class="radio-container">Other
-                        <input type="radio" name="gender" value="other" [(ngModel)]="user.gender">
+                        <input type="radio" name="gender" value="other" [ngModel]="user.gender">
                         <span class="checkmark"></span>
                     </label>
                 </div>

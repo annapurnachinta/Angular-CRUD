@@ -33,7 +33,7 @@ export class UserService {
   }
 
   onGetUser(id: Number){
-    return this.users.find(x => x.id === id)
+    return this.users.find(x => x.id == id)
   }
 
   onAdd(user: User){
@@ -48,7 +48,6 @@ export class UserService {
 
   updateUser(user: User){
     let oldUser:any = this.users.find(x => x.id === user.id) ;
-    console.log(user.id)
     oldUser.firstName = user.firstName;
     oldUser.lastName = user.lastName;
     oldUser.emailId = user.emailId;

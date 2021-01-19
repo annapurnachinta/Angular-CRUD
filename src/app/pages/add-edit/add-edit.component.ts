@@ -37,7 +37,7 @@ user: any| User = {
 
   onSubmit(form: NgForm){
     let user: any| User = {
-      id:form.value.id,
+      id: form.value.id,
       firstName: form.value.firstName,
       lastName: form.value.lastName,
       emailId: form.value.emailId,
@@ -49,7 +49,6 @@ user: any| User = {
     if(this.id === '0'){
       this.userService.onAdd(user);
     }else{
-      console.log(this.id, user,'update')
       this.userService.updateUser(user)
     }
     this.router.navigateByUrl('')
