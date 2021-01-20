@@ -21,7 +21,7 @@ export class UserService {
       lastName: 'BB',
       emailId: 'b@gmail.com',
       phoneNo: 9887654343,
-      role: 'Test',
+      role: 'Tester',
       gender: 'Female',
     }
   ];
